@@ -22,7 +22,12 @@ body {
   text-align:center;
   position: relative;
   flex-flow: column;
-  background-image: url(images/plants_dark.jpg);
+  /*background:*/
+ /* repeating-radial-gradient(
+      circle at 0 0,
+      #eee,
+      #ccc 50px)*/
+  background-image: url(https://images.unsplash.com/uploads/1412282232015a06e258a/4bdd2a58?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80);
   background-size:100% 100%;
   clip-path: polygon(
     0 0,
@@ -51,6 +56,7 @@ body {
 }
 .text-container > h1 {
   font-size: 2rem;
+  z-index: 100;
 }
 .text-container > h2 {
   text-align:left;

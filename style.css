@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2;
+  text-align: center
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.mb-40{
+  margin-bottom: 40px;
+}
+
+#header{
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  text-align:center;
+  position: relative;
+  flex-flow: column;
+  background-image: url(images/plants_dark.jpg);
+  background-size:100% 100%;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 5vw)
+  );
+}
+#header:after{
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0,0, 0.2);
+  position: absolute;
+}
+.text-container{
+  max-width:1000px;
+  justify-content:center;
+  color: #fff;
+  position :relative;
+  margin :0 auto;
+}
+.text-container > h1 {
+  font-size: 2rem;
+}
+.text-container > h2 {
+  text-align:left;
+}
+.container {
+  max-width: 700px;
+  margin:0 auto;
+}
+
+.article-header{
+  font-size: 1.2rem;
+}
+.article-content {
+  line-height: 1.3rem;
+  text-align: justify;
+}
+.spacing{
+  width: 7rem;
+  height: 3px;
+  border-radius: 2px;
+  background-color: red;
+  display: inline-block;
+}
+
+
+/*MEDIA QUERIES */
+
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .text-container {
+    margin :0 auto;
+  }
+  .text-container > h1{
+    font-size:2rem;
+    line-height: 3rem;
+
+  }
+   .text-container > h3{
+    display: none;
+  }
+  .article-card {
+    padding:2rem;
+  }
+  .article-card > h4{
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+
+}
+
+@media (max-width: 760px) {
+  .article-card {
+    padding:2rem;
+  }
+    .text-container > h3{
+    font-size:1rem;
+    font-weight: normal;
+  }
+}
+
+
+

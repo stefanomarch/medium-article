@@ -112,5 +112,16 @@ body {
   }
 }
 
+@media (max-width: 960px) {
+  .article-card {
+    padding:2rem;
+  }
+}
+@media (max-width: 960px) {
+  .article-card {
+    padding:2rem;
+  }
+}
+
 
 
